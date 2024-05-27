@@ -7,7 +7,7 @@ class InfoController
     async getinfo(ctx: Context) {
         // recv        : JSON  {messege : v1}
         // status code : 200
-        return ctx.json({messege :'v1'},200)
+        return ctx.json({messege :'v1'},200);
     }
 
 }

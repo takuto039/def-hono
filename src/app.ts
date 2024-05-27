@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import infoRouter from "./v1/info/infoRouter";
-
+import authRouter from "./v1/auth/authRouter";
 
 import { cors } from "hono/cors";
 
@@ -22,5 +22,6 @@ app.use(
 
 // routeは下に追加すること。
 app.route('/api/v1', infoRouter)
+app.route('/api/v1', authRouter)
 
 export default app;
